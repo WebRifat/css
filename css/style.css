@@ -1,0 +1,93 @@
+/* COMMON CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+    text-align: center;
+    background-color: blue;
+    font-family: sans-serif;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    display: block;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+nav ul li:hover > a{
+    background-color: green;
+
+}
+nav ul li .submenu{
+    position: absolute;
+    width: 250px;
+    border: 1px solid #eee;
+    text-align: left;
+    border-top: 4px solid red;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 50px;
+    transition: 0.35s;
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+}
+nav ul li:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0;
+}
+nav ul li .submenu li{
+    display: block;
+    
+}
+nav ul li .submenu a{
+    color: black;
+    border-bottom: 1px solid white;
+}
+nav ul li .submenu .submenu{
+    left: 100%;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* COMMON CSS END */
